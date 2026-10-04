@@ -1,4 +1,65 @@
 <!DOCTYPE html>
-<html>  
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Unique title for SEO and Accessibility -->
+    <title>Professional Portfolio - Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Get In Touch</h1>
+        <!-- Consistent relative navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="home_index_html.html">Home</a></li>
+                <li><a href="bio_about_html.html">About Me</a></li>
+                <li><a href="media_gallery_html.html">Portfolio Gallery</a></li>
+                <li><a href="results_data_html.html">Academic Results</a></li>
+                <li><a href="input_contact_html.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Form (Distinction Objective)</h2>
+            <p>Please fill out the form below to reach out regarding collaborations or inquiries.</p>
+            
+            <!-- Form element wrapping all input fields -->
+            <form action="#" method="POST">
+                <!-- Grouping fields with <section> instead of generic <div> -->
+                <section>
+                    <!-- Explicit label association using 'for' and matching 'id' -->
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </section>
+                
+                <section>
+                    <!-- HTML5 email type for native client-side validation -->
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" id="emailAddress" name="emailAddress" required>
+                </section>
+                
+                <section>
+                    <!-- HTML5 tel type -->
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+256 700 000000">
+                </section>
+                
+                <section>
+                    <label for="userMessage">Your Message:</label>
+                    <textarea id="userMessage" name="userMessage" rows="5" required></textarea>
+                </section>
+                
+                <section>
+                    <button type="submit">Submit Message</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Group C IT & Web Design. SWE2106 Etivity 3 Submission.</p>
+    </footer>
+</body>
 </html>
